@@ -2,7 +2,7 @@
     <div class="container" style="width:100%;">
         <div 
             class="tab-title"
-            style="position:absolute;right:1rem;"
+            style="position:absolute;right:.88rem;"
             >
             <li 
                 :tabTitle="tabTitle"

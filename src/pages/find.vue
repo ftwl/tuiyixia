@@ -53,7 +53,7 @@ export default {
         .tabs
             position:relative
             width : 5rem
-            top: .5rem
+            top: 4.5rem
             .tab-container
                 position: relative
                 top:2.2rem
