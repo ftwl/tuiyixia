@@ -85,7 +85,7 @@ export default {
             justify-content :space-between
             margin-left :.24rem
             margin-right :.88rem
-            margin-top :1.22rem
+            margin-top :1rem
             margin-bottom :.75rem
             .footer-left
                 span
