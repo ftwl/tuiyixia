@@ -13,7 +13,7 @@
             <span>购买数量</span>
             <div class="counts">
                 <label class="counter">-</label>
-                <input />
+                <input type="number" />
                 <label class="counter">+</label>
             </div>
         </div>
@@ -48,7 +48,7 @@ export default {
             .info
                 margin-left :.59rem
                 p
-                    margin-bottom :1.69rem
+                    margin-bottom :.9rem
                     font-size:.88rem
                     color :#333
                 span 
@@ -94,6 +94,8 @@ export default {
                     border-left:1px solid #dedede
                     border-right:1px solid #dedede
                     text-align :center
+                    border-radius:0
+                    outline :none
 </style>
 
 
