@@ -11,7 +11,7 @@
             </div>
             <div class="buy">
                 <span>已售:256</span>
-                <button class="button" type="button">立即购买</button>
+                <button class="button" type="button" @click="shop">立即购买</button>
             </div>
         </div>
     </div>
@@ -21,6 +21,11 @@
 export default {
     props:{
         image:String
+    },
+    methods:{
+        shop(){
+            this.$emit('ListenShop')
+        }
     }
 }
 </script>

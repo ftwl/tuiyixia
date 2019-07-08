@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <back-header class="order" title="订单"></back-header>
         <cube-tab-bar   class="tabs" 
                         v-model="selectedLabel" 
                         :data="tabLabels"
@@ -138,7 +137,7 @@ export default {
         .order
             border-bottom :1px solid #dedede
         .tabs
-            padding-top:3rem
+            padding-top:.3rem
         .tab-slide-container
             position: fixed
             top: 5rem
