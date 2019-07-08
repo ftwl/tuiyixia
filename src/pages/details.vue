@@ -1,7 +1,8 @@
 <template>
     <div class="container">
+        <back-header showShare={true}></back-header>
+        <div class="details-content">
         <div class="details-commodity">
-            <back-header showShare={true}></back-header>
             <details-card
                 class="card"
                 :pic="pic"
@@ -23,6 +24,8 @@
                 <discounts-card :image="image"></discounts-card>
             </div>
         </more>
+        </div>
+        <details-footer></details-footer>
     </div>
 </template>
 
@@ -32,6 +35,7 @@ import DetailsCard from '@/components/details-card'
 import DetailsInfo from '@/components/details-info'
 import More from '@/components/more'
 import DiscountsCard from '@/components/discounts-card'
+import DetailsFooter from '@/components/details-footer'
 
 export default {
     components:{
@@ -39,7 +43,8 @@ export default {
         DetailsCard,
         DetailsInfo,
         More,
-        DiscountsCard
+        DiscountsCard,
+        DetailsFooter
     },
     data(){
         return({
@@ -54,24 +59,27 @@ export default {
 
 <style lang="stylus" scoped>
     .container
-        .details-commodity
-            padding-top:3rem
-        .merchant
-            margin-top :.88rem
-            .client
-            margin-top:.97rem
-            font-weight:400
-            .useInfo
-                margin-top :.19rem
-                .use-rules
-                    margin-top:1rem
-        .more
-            display :flex
-            flex-direction :column
-            margin-top:.88rem
-            .more-list
+        .details-content
+            height :130vh
+            overflow-y:auto
+            .details-commodity
+                padding-top:3rem
+            .merchant
+                margin-top :.88rem
+                .client
+                margin-top:.97rem
+                font-weight:400
+                .useInfo
+                    margin-top :.19rem
+                    .use-rules
+                        margin-top:1rem
+            .more
                 display :flex
-                flex-direction :row
+                flex-direction :column
+                margin-top:.88rem
+                .more-list
+                    display :flex
+                    flex-direction :row
         
 </style>
 

@@ -1,7 +1,11 @@
 <template>
-    <div class="container">
+    <div class="container" :content="content">
         <span :title="title">{{title}}</span>
-        <div class="right">
+        <div v-if="isLink" class="link">
+            <span>{{content}}</span>
+            <i class="cubeic-arrow"></i>
+        </div>
+        <div v-else class="right">
             <slot></slot>
         </div>
     </div>
@@ -10,7 +14,13 @@
 <script>
 export default {
     props:{
-        title:String
+        title:String,
+        width:String,
+        isLink:{
+            type:Boolean,
+            default:false
+        },
+        content:String
     }
 }
 </script>
@@ -22,13 +32,19 @@ export default {
         flex-direction :row
         align-items :center
         justify-content :space-between
-        width :100%
         height :3rem
         background :#fff
-        padding-left :.91rem
+        width :100%
         span 
             font-size:.88rem
-        .right
+            margin-left :.91rem
+        .link
             margin-right :.91rem
+            span 
+                font-size:.88rem
+                margin-right :.8rem
+                color :#b8b8b8
+            i 
+                color :#a7a7a7
 </style>
 

@@ -6,18 +6,18 @@
             :image="image"
         ></product>
         <div class="pocket-list">
-            <pay-list title="零钱抵扣">
+            <pay-list style="width:100%" title="零钱抵扣">
                 <cube-checkbox v-model="checked" position="right">
                     ¥ 2.66
                 </cube-checkbox>
             </pay-list>
         </div>
         <div class="personal-info">
-            <pay-list title="姓名">
+            <pay-list style="width:100%"  title="姓名">
                 <input type="text" class="read-in" placeholder="请输入姓名" />
             </pay-list>
             <div class="line"></div>
-            <pay-list title="手机">
+            <pay-list style="width:100%"  title="手机">
                 <input type="number" class="read-in" placeholder="请输入联系方式" />
             </pay-list>
         </div>

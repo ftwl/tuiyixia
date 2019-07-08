@@ -16,4 +16,5 @@ function findIndex(ary, fn) {
     return index
 }
 
+
 export {findIndex}

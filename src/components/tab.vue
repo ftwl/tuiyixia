@@ -29,6 +29,7 @@ export default {
     methods:{
         isActive(){
             this.$emit('ListenActive')
+            console.log('This is active')
         }
     }
 }

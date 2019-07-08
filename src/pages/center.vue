@@ -48,8 +48,7 @@ export default {
     components:{
         Purse,
         List
-    }
-    ,
+    },
     data(){
         return({
             avater:require('../assets/images/avater.png'),

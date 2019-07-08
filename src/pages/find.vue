@@ -39,7 +39,7 @@ export default {
             }else{
                 this.current = 0
             }
-        }
+        },
     }
 }
 </script>

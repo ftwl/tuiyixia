@@ -43,7 +43,7 @@ export default {
             margin-right :.8rem
             left :0
         span
-            font size 1.06rem
+            font-size:1.06rem
             color :#333
             font-weight:400
         .share

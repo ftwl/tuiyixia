@@ -49,6 +49,7 @@ export default {
         margin-left:.88rem
         padding-right :.88rem
         border-radius:.3rem
+        margin-right :.88rem
         .top
             display :flex
             flex-direction :row
